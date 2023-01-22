@@ -1,0 +1,30 @@
+body {
+
+  background-color: white;
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(19deg, #CFDBE4, #FFCED8, #DCF3FF);
+}
+
+@function rem1($exp) {
+  $result : ($exp/16) * 1rem;
+
+  @return $result;
+  }
+
+.image{
+  padding: rem1(5);
+  width: rem1(300);
+  height: rem1(400);
+  float: right;
+}
+
+.rectangel {
+  margin-top: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: rem1(25);
+  background: white;
+  padding: rem1(20);
+  width: rem1(800);
+  height: rem1(400);
+}
